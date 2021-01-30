@@ -14,4 +14,7 @@ public class Document {
         return attributes;
     }
 
+    public String getAttribute(final String attributeName) {
+        return attributes.get(attributeName);
+    }
 }

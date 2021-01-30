@@ -8,7 +8,7 @@ import java.util.Map;
 
 import static com.prpu.document_management_system.Attributes.*;
 
-class ReportImporter implements Importer {
+public class ReportImporter implements Importer {
     private static final String NAME_PREFIX = "Patient: ";
 
     @Override
