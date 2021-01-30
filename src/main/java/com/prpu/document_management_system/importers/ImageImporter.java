@@ -14,11 +14,11 @@ import static com.prpu.document_management_system.Attributes.*;
 public class ImageImporter implements Importer {
 
     @Override
-    public Document importFile(File file) throws IOException {
+    public Document importFile(File importFile) throws IOException {
         final Map<String, String> attributes = new HashMap<>();
-        attributes.put(PATH, file.getPath());
+        attributes.put(PATH, importFile.getPath());
 
-        final BufferedImage image = ImageIO.read(file);
+        final BufferedImage image = ImageIO.read(importFile);
         attributes.put(WIDTH, String.valueOf(image.getWidth()));
         attributes.put(HEIGHT, String.valueOf(image.getHeight()));
         attributes.put(TYPE, "Image");
