@@ -5,8 +5,9 @@ import com.prpu.document_management_system.Document;
 import java.io.File;
 import java.io.IOException;
 
-public interface Importer {
-
-    Document importFile(File file) throws IOException;
-
+public class ReportImporter implements Importer {
+    @Override
+    public Document importFile(File file) throws IOException {
+        return null;
+    }
 }

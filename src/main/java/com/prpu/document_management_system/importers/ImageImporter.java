@@ -13,7 +13,6 @@ import static com.prpu.document_management_system.Attributes.*;
 
 public class ImageImporter implements Importer {
 
-
     @Override
     public Document importFile(File file) throws IOException {
         final Map<String, String> attributes = new HashMap<>();
